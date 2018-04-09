@@ -8,8 +8,8 @@ To understand better on how to implement this module, you can go into `examples`
 
 Examples
 --------
-* [Generate Random Password](https://github.com/traveloka/terraform-aws-random/tree/master/examples/random-password)
-* [Random Value for Resource Naming](https://github.com/traveloka/terraform-aws-random/tree/master/examples/cloudwatch-loggroup-name)
+* [Generate Random Password](https://github.com/traveloka/terraform-random-id/tree/master/examples/random-password)
+* [Random Value for Resource Naming](https://github.com/traveloka/terraform-random-id/tree/master/examples/cloudwatch-loggroup-name)
 
 Terraform Version
 -----------------
