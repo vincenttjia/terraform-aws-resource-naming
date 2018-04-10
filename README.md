@@ -1,15 +1,20 @@
-terraform-aws-random
-====================
-Terraform module to generate random value
+terraform-aws-resource-naming
+=============================
+Terraform module to generate resource name
 
 Usage
 -----
 To understand better on how to implement this module, you can go into `examples` folder and try them.
 
+Module
+--------
+* [Autoscaling Policy](https://github.com/traveloka/terraform-aws-resource-naming/tree/master/modules/autoscaling-policy)
+* [DB Parameter Group](https://github.com/traveloka/terraform-aws-resource-naming/tree/master/modules/db-parameter-group)
+
 Examples
 --------
-* [Generate Random Password](https://github.com/traveloka/terraform-random-id/tree/master/examples/random-password)
-* [Random Value for Resource Naming](https://github.com/traveloka/terraform-random-id/tree/master/examples/cloudwatch-loggroup-name)
+* [Autoscaling Policy Example](https://github.com/traveloka/terraform-aws-resource-naming/tree/master/examples/autoscaling-policy-example)
+* [PostgreSQL Parameter Group](https://github.com/traveloka/terraform-aws-resource-naming/tree/master/examples/postgres-parameter-group)
 
 Terraform Version
 -----------------
