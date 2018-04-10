@@ -1,4 +1,4 @@
-output "generated_name" {
+output "name" {
   description = "The generated name with random_id presented in padded hexadecimal digits as suffix."
-  value       = "${module.this.generated_name}"
+  value       = "${module.this.name}"
 }

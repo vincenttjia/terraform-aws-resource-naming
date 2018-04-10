@@ -6,11 +6,6 @@ Usage
 -----
 To understand better on how to implement this module, you can go into `examples` folder and try them.
 
-Module
---------
-* [Autoscaling Policy](https://github.com/traveloka/terraform-aws-resource-naming/tree/master/modules/autoscaling-policy)
-* [DB Parameter Group](https://github.com/traveloka/terraform-aws-resource-naming/tree/master/modules/db-parameter-group)
-
 Examples
 --------
 * [Autoscaling Policy Example](https://github.com/traveloka/terraform-aws-resource-naming/tree/master/examples/autoscaling-policy-example)
