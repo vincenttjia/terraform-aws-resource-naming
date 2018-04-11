@@ -2,18 +2,11 @@ locals {
   # Randomly generated hexadecimal value should not exceed 16 characters.
   max_byte_length = 8
 
-  # This value needs to be updated each time we need to add support for a resource
-  max_character_length = {
-    "autoscaling_policy"   = 255
-    "cloudwatch_log_group" = 512
-    "db_instance"          = 63
-    "db_parameter_group"   = 255
-    "iam_role"             = 64
-    "s3_bucket"            = 63
-    "security_group"       = 255
-  }
-
   # Remove trailing dash in case the user inputted one.
+  # Example:
+  # * var.name_prefix = "txtdata-app"    -->  prefix = "txtdata-app-"
+  # * var.name_prefix = "txtdata-app-"   -->  prefix = "txtdata-app-"
+  # * var.name_prefix = "txtdata-app--"  -->  prefix = "txtdata-app--"   
   prefix = "${substr(var.name_prefix, -1, 1) == "-" ? substr(var.name_prefix, 0, length(var.name_prefix)-1) : var.name_prefix}-"
 
   prefix_length                 = "${length(local.prefix)}"
@@ -23,12 +16,12 @@ locals {
   random_byte_length     = "${min(local.max_byte_length, local.random_max_byte_length)}"
 }
 
-# Null Provider. Created this on 20180410
+# Null Provider. This module was created on 2018/04/10
 provider "null" {
   version = "1.0.0"
 }
 
-# Random Provider. Created this on 20180410
+# Random Provider. This module was created on 2018/04/10
 provider "random" {
   version = "1.2.0"
 }
