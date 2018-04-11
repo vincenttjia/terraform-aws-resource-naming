@@ -10,6 +10,7 @@ locals {
     "db_parameter_group"   = 255
     "iam_role"             = 64
     "s3_bucket"            = 63
+    "security_group"       = 255
   }
 
   # Remove trailing dash in case the user inputted one.
