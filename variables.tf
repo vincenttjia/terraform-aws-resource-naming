@@ -1,5 +1,5 @@
 variable "name_prefix" {
-  description = "Arbitrary string to prefix the output value with. No need for trailing dash, that will be added by the module."
+  description = "Arbitrary string to prefix the output value with. Adding trailing dash/hypen will not give any effect, it will be added by the module automatically."
   type        = "string"
 }
 
