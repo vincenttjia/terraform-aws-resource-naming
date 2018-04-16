@@ -18,9 +18,11 @@ Supported Resources
 -------------------
 * autoscaling_policy
 * cloudwatch_log_group
+* cloudwatch_event_rule
 * db_instance
 * db_parameter_group
 * iam_role
+* lambda_function
 * lb
 * lb_target_group
 * security_group
