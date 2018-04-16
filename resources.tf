@@ -15,6 +15,7 @@ locals {
     "db_instance"          = 63  # https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_CreateDBInstance.html
     "db_parameter_group"   = 255 # https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_CreateDBParameterGroup.html
     "iam_role"             = 64  # https://docs.aws.amazon.com/IAM/latest/APIReference/API_CreateRole.html
+    "lambda_function"      = 140 # https://docs.aws.amazon.com/lambda/latest/dg/API_CreateFunction.html
     "lb"                   = 32  # https://docs.aws.amazon.com/elasticloadbalancing/latest/APIReference/API_CreateLoadBalancer.html
     "lb_target_group"      = 32  # https://docs.aws.amazon.com/elasticloadbalancing/latest/APIReference/API_CreateTargetGroup.html
     "s3_bucket"            = 63  # https://docs.aws.amazon.com/AmazonS3/latest/dev/BucketRestrictions.html
