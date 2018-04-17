@@ -23,6 +23,7 @@ Supported Resources
 * db_instance
 * db_parameter_group
 * dynamodb_table
+* elasticache_cluster
 * iam_role
 * lambda_function
 * launch_configuration
