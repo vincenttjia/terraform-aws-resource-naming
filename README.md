@@ -16,17 +16,24 @@ Examples
 
 Supported Resources
 -------------------
+* autoscaling_group
 * autoscaling_policy
-* cloudwatch_log_group
 * cloudwatch_event_rule
+* cloudwatch_log_group
 * db_instance
 * db_parameter_group
+* dynamodb_table
+* elasticache_cluster
+* elasticsearch_domain
+* iam_instance_profile
 * iam_role
 * lambda_function
+* launch_configuration
 * lb
 * lb_target_group
 * security_group
 * s3_bucket
+* sqs_queue
 
 
 Contributing
