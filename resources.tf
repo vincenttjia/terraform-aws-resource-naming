@@ -19,6 +19,7 @@ locals {
     "dynamodb_table"        = 255 # https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_CreateTable.html
     "elasticache_cluster"   = 20  # https://docs.aws.amazon.com/AmazonElastiCache/latest/APIReference/API_CreateCacheCluster.html
     "elasticsearch_domain"  = 28  # https://docs.aws.amazon.com/elasticsearch-service/latest/developerguide/es-createupdatedomains.html#es-createdomains
+    "iam_instance_profile"  = 128 # https://docs.aws.amazon.com/IAM/latest/APIReference/API_CreateInstanceProfile.html
     "iam_role"              = 64  # https://docs.aws.amazon.com/IAM/latest/APIReference/API_CreateRole.html
     "lambda_function"       = 140 # https://docs.aws.amazon.com/lambda/latest/dg/API_CreateFunction.html
     "launch_configuration"  = 255 # https://docs.aws.amazon.com/autoscaling/ec2/APIReference/API_CreateLaunchConfiguration.html
