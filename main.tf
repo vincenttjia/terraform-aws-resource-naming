@@ -42,4 +42,5 @@ resource "null_resource" "unsupported_resource_type" {
 resource "random_id" "this" {
   prefix      = "${local.prefix}"
   byte_length = "${local.random_byte_length}"
+  keepers     = "${var.keepers}"
 }
