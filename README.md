@@ -33,6 +33,7 @@ Supported Resources
 * lb_target_group
 * security_group
 * s3_bucket
+* sns_topic
 * sqs_queue
 
 
