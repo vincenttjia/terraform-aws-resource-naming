@@ -23,6 +23,7 @@ Supported Resources
 * db_instance
 * db_parameter_group
 * dynamodb_table
+* ec2_key_pair
 * elasticache_cluster
 * elasticsearch_domain
 * iam_instance_profile
