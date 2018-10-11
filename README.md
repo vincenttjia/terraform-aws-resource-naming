@@ -27,6 +27,7 @@ Supported Resources
 * elasticsearch_domain
 * iam_instance_profile
 * iam_role
+* key_pair
 * lambda_function
 * launch_configuration
 * lb

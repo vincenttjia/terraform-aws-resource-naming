@@ -21,6 +21,7 @@ locals {
     "elasticsearch_domain"  = 28  # https://docs.aws.amazon.com/elasticsearch-service/latest/developerguide/es-createupdatedomains.html#es-createdomains
     "iam_instance_profile"  = 128 # https://docs.aws.amazon.com/IAM/latest/APIReference/API_CreateInstanceProfile.html
     "iam_role"              = 64  # https://docs.aws.amazon.com/IAM/latest/APIReference/API_CreateRole.html
+    "key_pair"              = 255 # https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_CreateKeyPair.html
     "lambda_function"       = 140 # https://docs.aws.amazon.com/lambda/latest/dg/API_CreateFunction.html
     "launch_configuration"  = 255 # https://docs.aws.amazon.com/autoscaling/ec2/APIReference/API_CreateLaunchConfiguration.html
     "lb"                    = 32  # https://docs.aws.amazon.com/elasticloadbalancing/latest/APIReference/API_CreateLoadBalancer.html
