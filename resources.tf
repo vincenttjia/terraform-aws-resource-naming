@@ -18,6 +18,10 @@ locals {
     "db_instance"           = 63  # https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_CreateDBInstance.html
     "db_parameter_group"    = 255 # https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_CreateDBParameterGroup.html
     "dynamodb_table"        = 255 # https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_CreateTable.html
+    "ecs_cluster"           = 255 # https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_CreateCluster.html#ECS-CreateCluster-request-clusterName
+    "ecs_service"           = 255 # https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_CreateService.html#ECS-CreateService-request-serviceName
+    "ecs_task_definition"   = 255 # https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_RegisterTaskDefinition.html#ECS-RegisterTaskDefinition-request-family
+    "ecr_repository"        = 256 # https://docs.aws.amazon.com/AmazonECR/latest/APIReference/API_CreateRepository.html#ECR-CreateRepository-request-repositoryName
     "elasticache_cluster"   = 20  # https://docs.aws.amazon.com/AmazonElastiCache/latest/APIReference/API_CreateCacheCluster.html
     "elasticsearch_domain"  = 28  # https://docs.aws.amazon.com/elasticsearch-service/latest/developerguide/es-createupdatedomains.html#es-createdomains
     "iam_instance_profile"  = 128 # https://docs.aws.amazon.com/IAM/latest/APIReference/API_CreateInstanceProfile.html
