@@ -29,6 +29,7 @@ Supported Resources
 * ecs_service
 * ecs_task_definition
 * elasticache_cluster
+* elasticache_parameter_group
 * elasticsearch_domain
 * iam_instance_profile
 * iam_role
