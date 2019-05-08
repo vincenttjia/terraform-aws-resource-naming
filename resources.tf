@@ -12,6 +12,7 @@ locals {
   max_character_length = {
     "autoscaling_group"                   = "255" # https://docs.aws.amazon.com/autoscaling/ec2/APIReference/API_CreateAutoScalingGroup.html
     "autoscaling_policy"                  = "255" # https://docs.aws.amazon.com/autoscaling/ec2/APIReference/API_PutScalingPolicy.html
+    "autoscaling_schedule"                = "255" # https://docs.aws.amazon.com/autoscaling/ec2/APIReference/API_PutScheduledUpdateGroupAction.html
     "cloudwatch_event_rule"               = "64"  # https://docs.aws.amazon.com/AmazonCloudWatchEvents/latest/APIReference/API_Rule.html
     "cloudwatch_log_group"                = "512" # https://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference/API_CreateLogGroup.html
     "codebuild_project"                   = "255" # https://docs.aws.amazon.com/codebuild/latest/APIReference/API_CreateProject.html#CodeBuild-CreateProject-request-name
