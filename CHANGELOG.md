@@ -1,3 +1,9 @@
+## v0.17.1 (Oct 18, 2019)
+
+ENHANCEMENTS:
+
+* Update elasticache_cluster naming limit to 40 characters (see https://aws.amazon.com/about-aws/whats-new/2019/08/elasticache_supports_50_chars_cluster_name/)
+
 ## v0.17.0 (Jun 24, 2019)
 
 NOTES:
