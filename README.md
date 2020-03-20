@@ -108,6 +108,10 @@ This module will help you to generate a unique resource name by adding `random_i
 You need to know what resource you want to provision (`resource_type`) and what the name prefix (`name_prefix`) is. Then provide the information to this module's variables:
 
 ```hcl
+provider "random" {
+  version = ">= 1.2.0, < 3.0.0"
+}
+
 module "aws-resource-naming_lambda_role" {
   source        = "github.com/traveloka/terraform-aws-resource-naming"
   version       = "v0.17.1"

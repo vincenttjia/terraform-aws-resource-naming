@@ -1,3 +1,7 @@
+provider "random" {
+  version = ">= 1.2.0, < 3.0.0"
+}
+
 locals {
   service_name        = "txtdata"
   cluster_role        = "app"

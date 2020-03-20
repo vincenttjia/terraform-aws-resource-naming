@@ -22,11 +22,6 @@ locals {
   random_byte_length     = "${min(local.max_byte_length, local.random_max_byte_length)}"
 }
 
-# Random Provider. This module was created on 2018/04/10
-provider "random" {
-  version = ">= 1.2.0, < 3.0.0"
-}
-
 # Provides random id in hex format
 resource "random_id" "this" {
   prefix      = "${local.prefix}"
