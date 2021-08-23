@@ -1,7 +1,7 @@
 # This module was created using Terraform 0.11.6 on 2018/04/10
-# Tested working on Terraform 0.12.0 on 2019/05/28
+# Tested working on Terraform 0.12.31 on 2021/08/05
 terraform {
-  required_version = ">= 0.11.6, < 0.13.0"
+  required_version = ">= 0.12.0"
 }
 
 locals {
