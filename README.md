@@ -1,6 +1,6 @@
 # terraform-aws-resource-naming
 
-[![Terraform Version](https://img.shields.io/badge/Terraform%20Version->=0.12.0,<0.13.0-blue.svg)](https://releases.hashicorp.com/terraform/)
+[![Terraform Version](https://img.shields.io/badge/Terraform%20Version->=0.13.0,<0.14.0-blue.svg)](https://releases.hashicorp.com/terraform/)
 [![Release](https://img.shields.io/github/release/traveloka/terraform-aws-resource-naming.svg)](https://github.com/traveloka/terraform-aws-resource-naming/releases)
 [![Last Commit](https://img.shields.io/github/last-commit/traveloka/terraform-aws-resource-naming.svg)](https://github.com/traveloka/terraform-aws-resource-naming/commits/master)
 [![Issues](https://img.shields.io/github/issues/traveloka/terraform-aws-resource-naming.svg)](https://github.com/traveloka/terraform-aws-resource-naming/issues)
@@ -10,28 +10,28 @@
 
 ## Table of Content
 
-- [terraform-aws-resource-naming](#terraform-aws-resource-naming)
-  - [Table of Content](#table-of-content)
-  - [Prerequisites](#prerequisites)
-  - [Quick Start](#quick-start)
-    - [Usage](#usage)
-    - [Examples](#examples)
-  - [Module Definition](#module-definition)
-  - [Requirements](#requirements)
-  - [Providers](#providers)
-  - [Modules](#modules)
-  - [Resources](#resources)
-  - [Inputs](#inputs)
-  - [Outputs](#outputs)
-  - [Dependencies](#dependencies)
-  - [Contributing](#contributing)
-  - [License](#license)
+* [terraform-aws-resource-naming](#terraform-aws-resource-naming)
+   * [Table of Content](#table-of-content)
+   * [Prerequisites](#prerequisites)
+   * [Quick Start](#quick-start)
+      * [Usage](#usage)
+      * [Examples](#examples)
+   * [Module Definition](#module-definition)
+   * [Requirements](#requirements)
+   * [Providers](#providers)
+   * [Modules](#modules)
+   * [Resources](#resources)
+   * [Inputs](#inputs)
+   * [Outputs](#outputs)
+   * [Dependencies](#dependencies)
+   * [Contributing](#contributing)
+   * [License](#license)
 
 ## Prerequisites
 
 - [Terraform](https://releases.hashicorp.com/terraform/)
     - This module was created using Terraform 0.11.6 on 2018/04/10
-    - The latest stable version of Terraform which this module tested working is Terraform 0.12.31 on 2021/08/05
+    - The latest stable version of Terraform which this module tested working is Terraform 0.13.7 on 2021/09/15
 
 ## Quick Start
 
@@ -158,7 +158,7 @@ To understand better on how to implement this module, you can go into `examples`
 
 | Name | Version |
 |------|---------|
-| <a name="requirement_terraform"></a> [terraform](#requirement\_terraform) | >= 0.12.0 |
+| <a name="requirement_terraform"></a> [terraform](#requirement\_terraform) | >= 0.13 |
 
 ## Providers
 
