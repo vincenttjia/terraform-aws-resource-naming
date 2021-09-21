@@ -1,5 +1,10 @@
-provider "random" {
-  version = ">= 1.2.0, < 3.0.0"
+terraform {
+  required_providers {
+    random = {
+      source  = "hashicorp/random"
+      version = ">= 1.2.0, < 3.0.0"
+    }
+  }
 }
 
 locals {

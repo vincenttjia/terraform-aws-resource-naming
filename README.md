@@ -1,6 +1,6 @@
 # terraform-aws-resource-naming
 
-[![Terraform Version](https://img.shields.io/badge/Terraform%20Version->=0.13.0,<0.14.0-blue.svg)](https://releases.hashicorp.com/terraform/)
+[![Terraform Version](https://img.shields.io/badge/Terraform%20Version->=0.13.0,<0.15.0-blue.svg)](https://releases.hashicorp.com/terraform/)
 [![Release](https://img.shields.io/github/release/traveloka/terraform-aws-resource-naming.svg)](https://github.com/traveloka/terraform-aws-resource-naming/releases)
 [![Last Commit](https://img.shields.io/github/last-commit/traveloka/terraform-aws-resource-naming.svg)](https://github.com/traveloka/terraform-aws-resource-naming/commits/master)
 [![Issues](https://img.shields.io/github/issues/traveloka/terraform-aws-resource-naming.svg)](https://github.com/traveloka/terraform-aws-resource-naming/issues)
@@ -112,8 +112,13 @@ This module will help you to generate a unique resource name by adding `random_i
 You need to know what resource you want to provision (`resource_type`) and what the name prefix (`name_prefix`) is. Then provide the information to this module's variables:
 
 ```hcl
-provider "random" {
-  version = ">= 1.2.0, < 3.0.0"
+terraform {
+  required_providers {
+    random = {
+      source = "hashicorp/random"
+      version = ">= 1.2.0, < 3.0.0"
+    }
+  }
 }
 
 module "aws-resource-naming_lambda_role" {
@@ -124,19 +129,19 @@ module "aws-resource-naming_lambda_role" {
 }
 
 resource "aws_iam_role" "lambda_role" {
-  name        = "${module.aws-resource-naming_lambda_role.name}"
+  name        = module.aws-resource-naming_lambda_role.name
   path        = "/lambda-role/"                                       
   description = "Lambda Role for Daily Scheduler"
 
-  assume_role_policy   = "${data.aws_iam_policy_document.lambda_assume_role_policy.json}"
+  assume_role_policy   = data.aws_iam_policy_document.lambda_assume_role_policy.json
 }
 
 data "aws_iam_policy_document" "lambda_assume_role_policy" {
-  statement = {
+  statement {
     actions = ["sts:AssumeRole"]
     effect  = "Allow"
 
-    principals = {
+    principals {
       type        = "Service"
       identifiers = ["lambda.amazonaws.com"]
     }
@@ -150,6 +155,7 @@ To understand better on how to implement this module, you can go into `examples`
 
 - [Autoscaling Policy Example](https://github.com/traveloka/terraform-aws-resource-naming/tree/master/examples/autoscaling-policy-example)
 - [PostgreSQL Parameter Group](https://github.com/traveloka/terraform-aws-resource-naming/tree/master/examples/postgres-parameter-group)
+- [IAM Role Example](https://github.com/traveloka/terraform-aws-resource-naming/tree/master/examples/iam-role-example)
 
 ## Module Definition
 
@@ -164,7 +170,7 @@ To understand better on how to implement this module, you can go into `examples`
 
 | Name | Version |
 |------|---------|
-| <a name="provider_random"></a> [random](#provider\_random) | n/a |
+| <a name="provider_random"></a> [random](#provider\_random) | 3.1.0 |
 
 ## Modules
 
